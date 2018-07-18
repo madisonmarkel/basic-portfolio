@@ -1,7 +1,7 @@
     body {
-        background:#eee;
+        background:url("../images/ignasi_pattern_s/ignasi_pattern_s.png");
         font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-        color:#777777;
+        color:#777;
         margin: 0;
         padding: 0;
         height:100%;
@@ -14,15 +14,12 @@
     .footer, .push {
         height:10em;
     }
-/*LAYOUT*/
-    .site_width {
-        max-width:70rem;
-        padding: 0 2.2rem;
-        margin:0 auto;
-    }
 /*SUPPORT STYLES*/
         h1 h2 h3 h4 {
             font-family: 'Georgia', Times, Times New Roman, serif;
+        }
+        h2 {
+            margin-top:0;
         }
         .text_center {
             text-align: center;
@@ -88,6 +85,7 @@
             clear:both;
             overflow:auto;
             margin:0 auto;
+            border:1px solid #ddd;
         }
         .bio_pic {
             max-width: 25%;
@@ -95,42 +93,61 @@
             padding-right: 1em;
         }
 /*PORTFOLIO*/
-        @media screen and (max-width:767px){
-            .cols {
-                clear:both;
-            }
+        .portfolio_square {
+            padding: 5em 0 1em;
+            width:48%;
+            margin:0 .75em .75em 0;
+            float:left;
         }
-        .col_half {
-            width: 50%;
-        }
-        .portfolio_sqaure {
-            max-width: 2em;
-        }
-        .portfolio_sqaure {
-            background: #4aaa4a;
+        .portfolio_square h2 {
+            color:#fff;
+            text-shadow: 1px 3px 8px #000;
+            text-align:center;
+            background: #44aaaa;
+            padding: .5em 0;
+            margin:0;
             width:100%;
         }
-        .portfolio_sqaure h2 {
-            color:#fff;
+        @media screen and (max-width:767px){
+            .portfolio_square {
+                width:100%;
+            }
+        }
+        .port_1 {
+            background:url("../images/200.jpg")
+        }
+        .port_2 {
+            background:url("../images/lorempixel-1.jpg")
+        }
+        .port_3 {
+            background:url("../images/lorempixel-2.jpg")
+        }
+        .port_4 {
+            background:url("../images/lorempixel-3.jpg")
+        }
+        .port_5 {
+            background:url("../images/lorempixel.jpg")
         }
 /*CONTACT*/
         .contact {
             margin:0 auto;
             background: white;
+            border:1px solid #ddd;
             max-width:30rem;
             padding:2em;
-            clear:both;
         }
         .short_answer {
             height:3em;
             width:100%;
             margin-bottom:1em;
+            padding-left:.3em;
         }
         .message {
             height:10em;
             max-height:25em;
             width: 100%;
             margin-bottom:1em;
+            padding-left:.3em;
         }
         .btn {
             background: #4aaaa5;
@@ -139,10 +156,13 @@
             color:#fff;
             font-size:.9em;
         }
+        .btn:hover {
+            background: #0ceadf;
+        }
 /*FOOTER*/
         footer {
             background: #666666;
             padding: 2em;
             margin-top:2em;
-            border-top: 10px solid #4aaaa5;
+            border-top: 8px solid #4aaaa5;
         }
